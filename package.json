@@ -1,0 +1,56 @@
+{
+  "name": "personal-portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": ">=14.0.0",
+    "yarn": "1.22.19",
+    "pnpm": "please use yarn",
+    "npm": "please use yarn"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "build:start": "next build && next start",
+    "start": "next start",
+    "lint": "next lint",
+    "lint:check": "eslint --ext .ts .",
+    "lint:fix": "eslint --fix --ext .ts .",
+    "format:check": "prettier --check .",
+    "format:fix": "prettier --write ."
+  },
+  "dependencies": {
+    "@headlessui/react": "^1.7.4",
+    "@tailwindcss/line-clamp": "^0.4.2",
+    "formik": "^2.2.9",
+    "next": "12.3.1",
+    "next-themes": "^0.2.1",
+    "prettier-plugin-tailwindcss": "^0.1.13",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-icons": "^4.6.0",
+    "swiper": "^8.4.4",
+    "yup": "^0.32.11"
+  },
+  "devDependencies": {
+    "@types/node": "18.8.1",
+    "@types/react": "18.0.21",
+    "@types/react-dom": "18.0.6",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "autoprefixer": "^10.4.13",
+    "eslint": "^8.0.1",
+    "eslint-config-next": "12.3.1",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-standard-with-typescript": "^23.0.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-n": "^15.0.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-react": "^7.31.8",
+    "eslint-plugin-simple-import-sort": "^8.0.0",
+    "postcss": "^8.4.19",
+    "prettier": "^2.7.1",
+    "tailwindcss": "^3.2.4",
+    "typescript": "*"
+  }
+}
