@@ -17,6 +17,10 @@ module.exports = {
       '2xl': '1536px'
     },
     extend: {
+      backgroundImage: {
+        main_bg_light: "url('../assets/images/main-bg-light.jpg')",
+        main_bg_dark: "url('../assets/images/main-bg-dark.jpg')"
+      },
       colors: {
         primary: '#fd4766',
         lite: '#44566C',

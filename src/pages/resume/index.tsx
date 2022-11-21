@@ -1,8 +1,12 @@
-import { NextPage } from 'next';
-
 import { Resume } from '@/components';
+import { NextPageWithLayout } from '@/interfaces';
+import { CardLayout } from '@/layouts';
 
-const ResumePage: NextPage = () => {
+const ResumePage: NextPageWithLayout = () => {
   return <Resume />;
 };
 export default ResumePage;
+
+ResumePage.getLayout = (page) => {
+  return <CardLayout>{page}</CardLayout>;
+};

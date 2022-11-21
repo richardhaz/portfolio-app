@@ -8,7 +8,7 @@ const Profile: React.FC = () => {
   return (
     <div className="flex h-[70vh] flex-col items-center justify-center">
       <div className="flex items-center justify-center">
-        <div className="overflow-hidden rounded-full bg-red-100 p-5">
+        <div className="select-none overflow-hidden rounded-full bg-gray-100 p-5">
           <Image src={defaultAvatar} objectFit="cover" width={180} height={180} alt="avatar" />
         </div>
       </div>
@@ -21,29 +21,44 @@ const Profile: React.FC = () => {
         <p className="font-poppins text-16 text-[#7b7b7b]">Web Developer</p>
       </div>
       <div className="mt-2 flex items-center justify-center space-x-3">
-        <a className="rounded-md bg-white p-2 shadow-sm dark:bg-[#212425]">
-          <span className="text-lg text-facebook">
-            <RiFacebookFill />
-          </span>
+        <a
+          href="https://facebook.com"
+          target="_blank"
+          className="rounded-md bg-white from-[#FA5252] to-[#DD2476] p-2 text-lg text-facebook shadow-sm transition-all duration-300 ease-in-out hover:bg-gradient-to-r hover:text-white dark:bg-[#212425]"
+          rel="noreferrer"
+        >
+          <RiFacebookFill />
         </a>
-        <a className="rounded-md bg-white p-2 shadow-sm dark:bg-[#212425]">
-          <span className="text-lg text-twitter">
-            <RiTwitterFill />
-          </span>
+        <a
+          href="https://twitter.com"
+          target="_blank"
+          className="rounded-md bg-white from-[#FA5252] to-[#DD2476] p-2 text-lg text-twitter shadow-sm transition-all duration-300 ease-in-out hover:bg-gradient-to-r hover:text-white dark:bg-[#212425]"
+          rel="noreferrer"
+        >
+          <RiTwitterFill />
         </a>
-        <a className="rounded-md bg-white p-2 shadow-sm dark:bg-[#212425]">
-          <span className="text-lg text-youtube">
-            <RiYoutubeFill />
-          </span>
+        <a
+          href="https://youtube.com"
+          target="_blank"
+          className="rounded-md bg-white from-[#FA5252] to-[#DD2476] p-2 text-lg text-youtube shadow-sm transition-all duration-300 ease-in-out hover:bg-gradient-to-r hover:text-white dark:bg-[#212425]"
+          rel="noreferrer"
+        >
+          <RiYoutubeFill />
         </a>
-        <a className="rounded-md bg-white p-2 shadow-sm dark:bg-[#212425]">
-          <span className="text-lg text-linkedin">
-            <RiLinkedinFill />
-          </span>
+        <a
+          href="https://linkedin.com"
+          target="_blank"
+          className="rounded-md bg-white from-[#FA5252] to-[#DD2476] p-2 text-lg text-linkedin shadow-sm transition-all duration-300 ease-in-out hover:bg-gradient-to-r hover:text-white dark:bg-[#212425]"
+          rel="noreferrer"
+        >
+          <RiLinkedinFill />
         </a>
       </div>
       <div className="flex items-center justify-center">
-        <a className="mt-6 flex items-center gap-2 rounded-[35px] bg-gradient-to-r from-[#FA5252] from-[#DD2476] to-[#DD2476] to-[#fa5252ef] px-6 py-2 font-poppins text-16 text-white transition duration-200 ease-linear hover:bg-gradient-to-l">
+        <a
+          href="#"
+          className="mt-6 flex items-center gap-2 rounded-[35px] bg-gradient-to-r from-[#FA5252] from-[#DD2476] to-[#DD2476] to-[#fa5252ef] px-6 py-2 font-poppins text-16 text-white transition duration-200 ease-linear hover:bg-gradient-to-l"
+        >
           <span className="text-xl">
             <AiOutlineDownload />
           </span>

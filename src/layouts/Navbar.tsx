@@ -29,7 +29,7 @@ const Navbar: React.FC = () => {
       return (
         <div
           onClick={() => setTheme('light')}
-          className="flex cursor-pointer items-center justify-center gap-2 rounded-full bg-white from-[#FA5252] to-[#DD2476] p-2 font-poppins transition-all duration-300 ease-in-out hover:bg-gradient-to-r dark:bg-[#4d4d4d] dark:text-white dark:text-gray-600"
+          className="flex cursor-pointer items-center justify-center gap-2 rounded-full bg-white from-[#FA5252] to-[#DD2476] p-2 font-poppins transition-all duration-300 ease-in-out hover:bg-gradient-to-r dark:bg-[#4d4d4d] dark:text-white"
         >
           <RiSunLine size={20} />
         </div>
@@ -49,7 +49,7 @@ const Navbar: React.FC = () => {
   return (
     <nav className="flex items-center justify-between py-12">
       <div className="w-full">
-        <span className="font-montserrat text-3xl font-semibold text-primary">Richard</span>
+        <span className="font-montserrat text-3xl font-semibold text-primary">Brand</span>
       </div>
       <ul className="flex gap-4">
         <li>
