@@ -4,14 +4,20 @@ import type { AppProps } from 'next/app';
 import { ThemeProvider } from 'next-themes';
 import { ReactElement } from 'react';
 
+import { NextPageWithLayout } from '@/interfaces';
 import { PrimaryLayout } from '@/layouts';
 
-function MyApp({ Component, pageProps }: AppProps): ReactElement {
+interface AppPropsWithLayout extends AppProps {
+  Component: NextPageWithLayout;
+}
+
+function MyApp({ Component, pageProps }: AppPropsWithLayout): ReactElement {
+  const getLayout = Component.getLayout ?? ((page) => page);
   return (
     <ThemeProvider enableSystem={true} attribute="class">
-      <PrimaryLayout>
-        <Component {...pageProps} />
-      </PrimaryLayout>
+      <div className="h-screen bg-main_bg_light bg-cover bg-center bg-no-repeat dark:bg-main_bg_dark">
+        <PrimaryLayout>{getLayout(<Component {...pageProps} />)}</PrimaryLayout>
+      </div>
     </ThemeProvider>
   );
 }
