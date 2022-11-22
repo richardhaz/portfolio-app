@@ -7,19 +7,13 @@ import defaultAvatar from '@/assets/avatar/male-with-glasses.svg';
 const Profile: React.FC = () => {
   return (
     <div className="flex h-[70vh] flex-col items-center justify-center">
-      <div className="flex items-center justify-center">
-        <div className="flex select-none overflow-hidden rounded-full bg-gradient-to-r from-[#FEAAB7] to-[#E97286] dark:bg-[#212425] dark:from-[#212425] dark:to-[#3d3d3d]">
-          <Image src={defaultAvatar} objectFit="cover" width={190} height={190} alt="avatar" />
-        </div>
+      <div className="flex select-none overflow-hidden rounded-full bg-gradient-to-r from-[#FEAAB7] to-[#E97286] dark:bg-[#212425] dark:from-[#212425] dark:to-[#3d3d3d]">
+        <Image src={defaultAvatar} objectFit="cover" width={190} height={190} alt="avatar" />
       </div>
-      <div className="mt-5">
-        <h3 className="flex items-center justify-center text-center font-poppins text-2xl font-semibold">
-          Richard Huaman
-        </h3>
-      </div>
-      <div className="mt-1 flex items-center justify-center">
-        <p className="font-poppins text-16 text-[#7b7b7b]">Web Developer</p>
-      </div>
+      <h3 className="mt-5 flex items-center justify-center text-center font-poppins text-2xl font-semibold">
+        Richard Huaman
+      </h3>
+      <p className="mt-1 text-center font-poppins text-16 text-[#7b7b7b]">Web Developer</p>
       <div className="mt-3 flex items-center justify-center space-x-3">
         <a
           href="https://facebook.com"
@@ -57,7 +51,7 @@ const Profile: React.FC = () => {
       <div className="flex items-center justify-center">
         <a
           href="#"
-          className="mt-6 flex items-center gap-2 rounded-[35px] bg-gradient-to-r from-[#FA5252] from-[#DD2476] to-[#DD2476] to-[#fa5252ef] px-6 py-2 font-poppins text-16 text-white transition duration-200 ease-linear hover:bg-gradient-to-l"
+          className="mt-6 flex items-center gap-2 rounded-full bg-gradient-to-r from-[#FA5252] from-[#DD2476] to-[#DD2476] to-[#fa5252ef] px-6 py-2 font-poppins text-16 text-white transition duration-200 ease-linear hover:bg-gradient-to-l"
         >
           <span className="text-xl">
             <AiOutlineDownload />
