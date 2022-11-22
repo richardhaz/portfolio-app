@@ -2,21 +2,26 @@ export const navLinks = [
   {
     link: '/',
     label: 'Home',
-    icon: 'RiHome8Line'
+    icon: 'AiOutlineHome'
   },
   {
     link: '/about',
     label: 'About',
-    icon: 'RiUser3Line'
+    icon: 'AiOutlineUser'
   },
   {
     link: '/resume',
     label: 'Resume',
-    icon: 'RiFileList2Line'
+    icon: 'AiOutlineFileText'
   },
   {
     link: '/projects',
     label: 'Projects',
-    icon: 'RiTerminalBoxLine'
+    icon: 'AiOutlineFundProjectionScreen'
+  },
+  {
+    link: '/contact',
+    label: 'Contact',
+    icon: 'RiContactsBookLine'
   }
 ];

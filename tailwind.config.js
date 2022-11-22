@@ -33,7 +33,8 @@ module.exports = {
       fontFamily: {
         poppins: 'Poppins, san-serif',
         montserrat: 'Montserrat, san-serif',
-        nunito: 'Nunito, sans-serif'
+        nunito: 'Nunito, sans-serif',
+        roboto_slab: 'Roboto Slab'
       },
       fontSize: {
         10: '10px',
