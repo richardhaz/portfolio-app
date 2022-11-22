@@ -10,24 +10,22 @@ interface Props {
   icon: string;
 }
 
-const iconStyle = '';
-
 const IconResolver: React.FC<Props> = ({ icon }) => {
   switch (icon) {
     case 'AiOutlineHome': {
-      return <AiOutlineHome className={iconStyle} />;
+      return <AiOutlineHome />;
     }
     case 'AiOutlineUser': {
-      return <AiOutlineUser className={iconStyle} />;
+      return <AiOutlineUser />;
     }
     case 'AiOutlineFileText': {
-      return <AiOutlineFileText className={iconStyle} />;
+      return <AiOutlineFileText />;
     }
     case 'AiOutlineFundProjectionScreen': {
-      return <AiOutlineFundProjectionScreen className={iconStyle} />;
+      return <AiOutlineFundProjectionScreen />;
     }
     default: {
-      return <RiContactsBookLine className={iconStyle} />;
+      return <RiContactsBookLine />;
     }
   }
 };
