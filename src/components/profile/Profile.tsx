@@ -8,7 +8,7 @@ const Profile: React.FC = () => {
   return (
     <div className="flex h-[70vh] flex-col items-center justify-center">
       <div className="flex items-center justify-center">
-        <div className="select-none overflow-hidden rounded-full bg-gradient-to-r from-[#FEAAB7] to-[#E97286] dark:bg-[#212425] dark:from-[#212425] dark:to-[#3d3d3d]">
+        <div className="flex select-none overflow-hidden rounded-full bg-gradient-to-r from-[#FEAAB7] to-[#E97286] dark:bg-[#212425] dark:from-[#212425] dark:to-[#3d3d3d]">
           <Image src={defaultAvatar} objectFit="cover" width={190} height={190} alt="avatar" />
         </div>
       </div>

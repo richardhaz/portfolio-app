@@ -67,7 +67,7 @@ const Navbar: React.FC = () => {
                     : 'bg-white text-gray-700 dark:bg-[#212425] dark:text-[#A6A6A6] hover:dark:text-white'
                 }`}
               >
-                <span className="text-xl">
+                <span className="text-lg">
                   <IconResolver icon={item.icon} />
                 </span>
                 {item.label}
