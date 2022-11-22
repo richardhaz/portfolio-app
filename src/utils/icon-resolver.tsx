@@ -1,33 +1,33 @@
 import {
-  RiFileList2Line,
-  RiHome8Line,
-  RiMoonLine,
-  RiTerminalBoxLine,
-  RiUser3Line
-} from 'react-icons/ri';
+  AiOutlineFileText,
+  AiOutlineFundProjectionScreen,
+  AiOutlineHome,
+  AiOutlineUser
+} from 'react-icons/ai';
+import { RiContactsBookLine } from 'react-icons/ri';
 
 interface Props {
   icon: string;
 }
 
-const iconStyle = 'text-2xl';
+const iconStyle = '';
 
 const IconResolver: React.FC<Props> = ({ icon }) => {
   switch (icon) {
-    case 'RiFileList2Line': {
-      return <RiFileList2Line className={iconStyle} />;
+    case 'AiOutlineHome': {
+      return <AiOutlineHome className={iconStyle} />;
     }
-    case 'RiHome8Line': {
-      return <RiHome8Line className={iconStyle} />;
+    case 'AiOutlineUser': {
+      return <AiOutlineUser className={iconStyle} />;
     }
-    case 'RiTerminalBoxLine': {
-      return <RiTerminalBoxLine className={iconStyle} />;
+    case 'AiOutlineFileText': {
+      return <AiOutlineFileText className={iconStyle} />;
     }
-    case 'RiMoonLine': {
-      return <RiMoonLine className={iconStyle} />;
+    case 'AiOutlineFundProjectionScreen': {
+      return <AiOutlineFundProjectionScreen className={iconStyle} />;
     }
     default: {
-      return <RiUser3Line className={iconStyle} />;
+      return <RiContactsBookLine className={iconStyle} />;
     }
   }
 };

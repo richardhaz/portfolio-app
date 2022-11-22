@@ -2,14 +2,14 @@ import Image from 'next/image';
 import { AiOutlineDownload } from 'react-icons/ai';
 import { RiFacebookFill, RiLinkedinFill, RiTwitterFill, RiYoutubeFill } from 'react-icons/ri';
 
-import defaultAvatar from '@/assets/avatar/male-with-glasses-2.svg';
+import defaultAvatar from '@/assets/avatar/male-with-glasses.svg';
 
 const Profile: React.FC = () => {
   return (
     <div className="flex h-[70vh] flex-col items-center justify-center">
       <div className="flex items-center justify-center">
-        <div className="select-none overflow-hidden rounded-full bg-gray-100 p-5">
-          <Image src={defaultAvatar} objectFit="cover" width={180} height={180} alt="avatar" />
+        <div className="select-none overflow-hidden rounded-full bg-gradient-to-r from-[#FEAAB7] to-[#E97286] dark:bg-[#212425] dark:from-[#212425] dark:to-[#3d3d3d]">
+          <Image src={defaultAvatar} objectFit="cover" width={190} height={190} alt="avatar" />
         </div>
       </div>
       <div className="mt-5">
@@ -20,7 +20,7 @@ const Profile: React.FC = () => {
       <div className="mt-1 flex items-center justify-center">
         <p className="font-poppins text-16 text-[#7b7b7b]">Web Developer</p>
       </div>
-      <div className="mt-2 flex items-center justify-center space-x-3">
+      <div className="mt-3 flex items-center justify-center space-x-3">
         <a
           href="https://facebook.com"
           target="_blank"
