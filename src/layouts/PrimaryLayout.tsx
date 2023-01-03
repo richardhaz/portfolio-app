@@ -9,11 +9,13 @@ interface Props {
 
 const PrimaryLayout: FC<Props> = ({ children }) => {
   return (
-    <div className="use-container">
+    <>
       <Navbar />
-      {children}
-      {/* <Footer /> */}
-    </div>
+      <div className="use-container">
+        {children}
+        {/* <Footer /> */}
+      </div>
+    </>
   );
 };
 export default PrimaryLayout;

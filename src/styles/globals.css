@@ -24,6 +24,18 @@
   }
 }
 
+body:before {
+  content: '';
+  background: rgb(0 153 255/0.1);
+  filter: blur(100px);
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  left: -50px;
+  top: 100px;
+  z-index: -1;
+}
+
 /* ::-moz-selection {
   background: #e4f7ff;
 }
@@ -32,6 +44,6 @@
   background: #e4f7ff;
 }
  */
-/* html {
-  background-color: #fee9ed;
-} */
+html {
+  background-color: #f2f5f6;
+}

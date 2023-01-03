@@ -28,7 +28,7 @@ const Navbar: React.FC = () => {
       return (
         <div
           onClick={() => setTheme('light')}
-          className="flex cursor-pointer items-center justify-center rounded-full bg-white from-[#FA5252] to-[#DD2476] p-2 transition-all duration-300 ease-in-out hover:bg-gradient-to-r dark:bg-[#4d4d4d] dark:text-white"
+          className="flex cursor-pointer items-center justify-center rounded-full bg-white p-2 transition-all duration-300 ease-in-out hover:bg-primary dark:bg-[#4d4d4d] dark:text-white dark:hover:bg-primary dark:hover:text-white"
         >
           <span className="text-xl">
             <RiSunLine />
@@ -39,7 +39,7 @@ const Navbar: React.FC = () => {
       return (
         <div
           onClick={() => setTheme('dark')}
-          className="flex cursor-pointer items-center justify-center rounded-full bg-white from-[#FA5252] to-[#DD2476] p-2 transition-all duration-300 ease-in-out hover:bg-gradient-to-r hover:text-white"
+          className="flex cursor-pointer items-center justify-center rounded-full bg-white p-2 transition-all duration-300 ease-in-out hover:bg-primary hover:text-white"
         >
           <span className="text-xl">
             <RiMoonLine />
@@ -50,10 +50,11 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <nav className="flex items-center justify-between py-12">
+    <nav className="use-container flex items-center justify-between bg-[#f3f6f6] py-5 sm:py-6 md:py-8 lg:bg-transparent lg:py-12">
       <div className="w-full">
-        <span className="rounded-full font-montserrat text-3xl font-semibold text-primary">
-          &#60; Richard &#47; &#62;
+        <span className="rounded-full font-montserrat text-3xl font-semibold text-primary dark:text-white">
+          {/*      &#60; Richard &#47; &#62; */}
+          Brand.
         </span>
       </div>
       <ul className="hidden gap-4 lg:flex">
@@ -61,10 +62,10 @@ const Navbar: React.FC = () => {
           <li key={item.link}>
             <Link href={item.link}>
               <a
-                className={`flex items-center justify-center gap-2 rounded-lg bg-gradient-to-r px-4 py-2 font-poppins text-13 transition-all duration-300 ease-in-out hover:bg-gradient-to-r hover:from-[#FA5252] hover:to-[#DD2476] hover:text-white ${
+                className={`flex items-center justify-center gap-2 rounded-lg px-4 py-2 font-poppins text-13 transition-all duration-300 ease-in-out hover:bg-primary hover:text-white dark:hover:bg-primary dark:hover:text-white ${
                   router.pathname === item.link
-                    ? 'from-[#FA5252] to-[#DD2476] text-white'
-                    : 'bg-white text-gray-700 dark:bg-[#212425] dark:text-[#A6A6A6] hover:dark:text-white'
+                    ? 'bg-primary text-white dark:bg-primary '
+                    : 'bg-white text-gray-700 dark:bg-[#212425] dark:text-[#A6A6A6] '
                 }`}
               >
                 <span className="text-lg">
@@ -81,7 +82,7 @@ const Navbar: React.FC = () => {
       <ul className="flex gap-4 lg:hidden">
         <li>{renderThemeChanger()}</li>
         <li>
-          <div onClick={toggleMenu} className="rounded-full bg-primary p-2 text-2xl text-white">
+          <div onClick={toggleMenu} className="rounded-full bg-primary p-2 text-xl text-white">
             <span>{showMenu ? <RiCloseLine /> : <RiMenuLine />}</span>
           </div>
         </li>
