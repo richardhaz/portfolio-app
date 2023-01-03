@@ -18,11 +18,16 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        main_bg_light: "url('../assets/images/main-bg-light.jpg')",
+        main_bg_light: "url('../assets/images/main-bg-squares.png')",
         main_bg_dark: "url('../assets/images/main-bg-dark.jpg')"
       },
       colors: {
-        primary: '#fd4766',
+        primary: {
+          light: '#EEEEEE',
+          DEFAULT: '#364F6B',
+          dark: '#222831'
+        },
+        secondary: '#00ADB5',
         lite: '#44566C',
         facebook: '#1871E7',
         instagram: '#B11975',
@@ -45,7 +50,9 @@ module.exports = {
         15: '15px',
         16: '16px',
         17: '17px',
-        18: '18px'
+        18: '18px',
+        19: '19px',
+        20: '20px'
       }
     }
   },
