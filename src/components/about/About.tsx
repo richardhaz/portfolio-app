@@ -52,7 +52,6 @@ const About: React.FC = () => {
                 </div>
               </div>
             </div>
-
             <div className="">
               <div className="flex items-center justify-start gap-2">
                 <span className="rounded-lg bg-white p-3 text-xl text-blue-500 shadow-lg">

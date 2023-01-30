@@ -33,7 +33,11 @@ module.exports = {
         instagram: '#B11975',
         linkedin: '#0072B1',
         youtube: '#F20000',
-        twitter: '#1C93E4'
+        twitter: '#1C93E4',
+        light1rgb: 'rgb(238, 245, 250)',
+        light2rgb: 'rgb(242, 244, 255)',
+        light3rgb: 'rgb(252, 244, 255)',
+        light4rgb: 'rgb(252, 249, 242)'
       },
       fontFamily: {
         poppins: 'Poppins, san-serif',
