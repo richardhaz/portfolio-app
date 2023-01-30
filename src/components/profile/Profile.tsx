@@ -32,7 +32,7 @@ const Profile: React.FC = () => {
           <RiTwitterFill />
         </a>
         <a
-          href="https://youtube.com"
+          href="https://www.youtube.com/@theguiltydeveloper"
           target="_blank"
           className="rounded-md bg-white p-2 text-lg text-youtube shadow-sm transition-all duration-300 ease-in-out hover:bg-primary hover:text-white dark:bg-primary-dark dark:hover:bg-primary-light dark:hover:text-youtube"
           rel="noreferrer"

@@ -50,11 +50,11 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <nav className="use-container flex items-center justify-between bg-[#f3f6f6] py-5 sm:py-6 md:py-8 lg:bg-transparent lg:py-12">
+    <nav className="use-container flex items-center justify-between bg-[#f3f6f6] py-6 dark:bg-black sm:py-6 md:py-8 lg:bg-transparent lg:py-12 dark:lg:bg-transparent">
       <div className="w-full">
         <span className="rounded-full font-montserrat text-3xl font-semibold text-primary dark:text-white">
           {/*      &#60; Richard &#47; &#62; */}
-          Brand.
+          Seasons
         </span>
       </div>
       <ul className="hidden gap-4 lg:flex">

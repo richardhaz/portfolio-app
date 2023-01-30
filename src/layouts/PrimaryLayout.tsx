@@ -11,7 +11,7 @@ const PrimaryLayout: FC<Props> = ({ children }) => {
   return (
     <>
       <Navbar />
-      <div className="use-container">
+      <div className="use-container-main-layout">
         {children}
         {/* <Footer /> */}
       </div>
