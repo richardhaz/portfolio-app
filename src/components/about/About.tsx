@@ -161,7 +161,7 @@ const About: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="mb-8">
+      {/*  <div className="mb-8">
         <h1 className="mb-4 font-poppins text-2xl font-medium md:text-4xl">Where I have worked?</h1>
         <div className="flex items-center justify-center gap-8">
           <div className="flex select-none p-5 dark:hidden">
@@ -182,7 +182,7 @@ const About: React.FC = () => {
         <p className="text-center dark:text-[#A6A6A6]">
           @Hey, thank you for visiting my portfolio!
         </p>
-      </div>
+      </div> */}
     </>
   );
 };

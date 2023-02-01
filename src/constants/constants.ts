@@ -46,3 +46,7 @@ export const getSvgCompany = () => ({
   stomarx: require('../assets/svg/companies/stomarx/stomarx-logo.svg'),
   stomarxLight: require('../assets/svg/companies/stomarx/stomarx-logo-white.svg')
 });
+
+export const getUndrawImage = () => ({
+  programmingGuy: require('../assets/undraw/programming-guy.svg')
+});

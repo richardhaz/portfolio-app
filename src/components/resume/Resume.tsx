@@ -83,7 +83,9 @@ const Resume: React.FC = () => {
             <div className="space-y-2 rounded-lg bg-light2rgb p-4 dark:border-2 dark:border-[#212425] dark:bg-transparent">
               <p className="font-poppins text-14 text-gray-500 dark:text-[#b7b7b7]">B2</p>
               <p className="font-poppins text-20 text-black dark:text-white">English</p>
-              <p className="font-poppins text-16 text-black dark:text-[#b7b7b7]">-</p>
+              <p className="font-poppins text-16 text-black dark:text-[#b7b7b7]">
+                B2 Competency in English
+              </p>
             </div>
           </div>
         </div>
