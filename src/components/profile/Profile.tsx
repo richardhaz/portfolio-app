@@ -5,7 +5,6 @@ import { RiFacebookFill, RiLinkedinFill, RiTwitterFill, RiYoutubeFill } from 're
 
 import Avatar from '@/assets/avatar/avatar.svg';
 import AvatarDark from '@/assets/avatar/avatar-dark.svg';
-import defaultAvatar from '@/assets/avatar/male-with-glasses.svg';
 
 const Profile: React.FC = () => {
   const { theme } = useTheme();
