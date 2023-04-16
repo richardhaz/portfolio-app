@@ -6,6 +6,11 @@ import { RiFacebookFill, RiLinkedinFill, RiTwitterFill, RiYoutubeFill } from 're
 import { getUndrawImage } from '@/constants';
 
 const Contact: React.FC = () => {
+  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    console.log('ok');
+  }
+
   return (
     <>
       <div className="col-span-12 mb-8 flex gap-4">
@@ -31,22 +36,22 @@ const Contact: React.FC = () => {
               I&lsquo;m always open to discussing about bussiness
             </p>
           </div>
-          <form onSubmit={() => {}}>
+          <form onSubmit={handleSubmit}>
             <div className="mb-6 flex flex-col gap-5">
               <input
                 type="text"
                 placeholder="Name *"
-                className="rounded-md border-2 border-[#E0E0E0] px-3 py-2 font-poppins text-15 text-gray-500 outline-1 outline-primary lg:px-4 lg:py-3 lg:text-16"
+                className="rounded-md border-2  border-[#E0E0E0] px-3 py-2 font-poppins text-15 text-gray-500 outline-1 outline-primary dark:border-gray-600 lg:px-4 lg:py-3 lg:text-16"
               />
               <input
                 type="email"
                 placeholder="Email *"
-                className="rounded-md border-2 border-[#E0E0E0] px-3 py-2  font-poppins text-15 text-gray-500 outline-1 outline-primary lg:px-4 lg:py-3 lg:text-16"
+                className="rounded-md border-2 border-[#E0E0E0] px-3 py-2 font-poppins  text-15 text-gray-500 outline-1 outline-primary dark:border-gray-600 lg:px-4 lg:py-3 lg:text-16"
               />
               <textarea
                 rows={3}
                 placeholder="Message *"
-                className="resize-none rounded-md border-2 border-[#E0E0E0] px-3 py-2 font-poppins text-15 text-gray-500 outline-1 outline-primary lg:px-4 lg:py-3 lg:text-16"
+                className="resize-none rounded-md border-2 border-[#E0E0E0] px-3 py-2 font-poppins text-15 text-gray-500 outline-1 outline-primary dark:border-gray-600 lg:px-4 lg:py-3 lg:text-16"
               />
             </div>
             <button
