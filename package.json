@@ -2,12 +2,6 @@
   "name": "personal-portfolio",
   "version": "0.1.0",
   "private": true,
-  "engines": {
-    "node": ">=14.0.0",
-    "yarn": "1.22.19",
-    "pnpm": "please use yarn",
-    "npm": "please use yarn"
-  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
