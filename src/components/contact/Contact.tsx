@@ -56,7 +56,7 @@ const Contact: React.FC = () => {
             </div>
             <button
               type="submit"
-              className="rounded-lg border-[1px] border-primary px-6 py-2 font-poppins font-semibold text-primary transition duration-700 ease-in-out hover:border-primary hover:bg-primary hover:text-white"
+              className="rounded-lg border-[1px] border-primary px-6 py-2 font-poppins font-semibold text-primary transition duration-700 ease-in-out hover:border-primary hover:bg-primary hover:text-white dark:bg-primary dark:text-white dark:hover:bg-gray-700"
             >
               Submit
             </button>
