@@ -9,7 +9,7 @@ import AvatarDark from '@/assets/avatar/avatar-dark.svg';
 const Profile: React.FC = () => {
   const { theme } = useTheme();
   return (
-    <div className="flex h-full flex-col items-center justify-center">
+    <div className="flex h-[80vh] flex-col items-center justify-center">
       <div className="flex select-none overflow-hidden rounded-full bg-primary-light dark:bg-[#212425] dark:from-[#212425] dark:to-[#3d3d3d]">
         <Image
           src={theme === 'light' ? Avatar : AvatarDark}

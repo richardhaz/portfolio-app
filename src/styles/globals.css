@@ -3,16 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 @layer base {
-  /*   body {
-    @apply bg-gray-50 text-gray-900 dark:bg-black dark:text-gray-100;
-    @apply min-h-screen;
-  }
- */
   ::selection {
     @apply bg-indigo-500 text-white;
   }
@@ -40,14 +31,6 @@ body:before {
   z-index: -1;
 }
 
-/* ::-moz-selection {
-  background: #e4f7ff;
-}
-
-::selection {
-  background: #e4f7ff;
-}
- */
-html {
-  background-color: #f2f5f6;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

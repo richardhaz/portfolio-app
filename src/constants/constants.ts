@@ -1,28 +1,36 @@
+import {
+  AiOutlineFileText,
+  AiOutlineFundProjectionScreen,
+  AiOutlineHome,
+  AiOutlineUser
+} from 'react-icons/ai';
+import { RiContactsBookLine } from 'react-icons/ri';
+
 export const navLinks = [
   {
     link: '/',
     label: 'Home',
-    icon: 'AiOutlineHome'
+    icon: AiOutlineHome
   },
   {
     link: '/about',
     label: 'About',
-    icon: 'AiOutlineUser'
+    icon: AiOutlineUser
   },
   {
     link: '/resume',
     label: 'Resume',
-    icon: 'AiOutlineFileText'
+    icon: AiOutlineFileText
   },
   {
     link: '/projects',
     label: 'Projects',
-    icon: 'AiOutlineFundProjectionScreen'
+    icon: AiOutlineFundProjectionScreen
   },
   {
     link: '/contact',
     label: 'Contact',
-    icon: 'RiContactsBookLine'
+    icon: RiContactsBookLine
   }
 ];
 
