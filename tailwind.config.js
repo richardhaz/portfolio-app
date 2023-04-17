@@ -18,8 +18,8 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        main_bg_light: "url('../assets/images/main-bg-white-squares.jpg')",
-        main_bg_dark: "url('../assets/images/main-bg-dark.jpg')"
+        mainBgLight: "url('/images/main-bg-white-squares.jpg')",
+        mainBgDark: "url('/images/main-bg-dark.jpg')"
       },
       colors: {
         primary: {

@@ -15,9 +15,9 @@ function MyApp({ Component, pageProps }: AppPropsWithLayout): ReactElement {
   const getLayout = Component.getLayout ?? ((page) => page);
   return (
     <ThemeProvider enableSystem={true} attribute="class">
-      {/* <div className="h-screen bg-main_bg_light bg-cover bg-center bg-no-repeat dark:bg-main_bg_dark"> */}
+      {/* <div className="h-screen bg-mainBgLight bg-cover bg-center bg-no-repeat dark:bg-mainBgDark"> */}
       <div className="main-bg-gradient"></div>
-      <div className="min-h-screen w-full bg-main_bg_light  bg-cover bg-fixed bg-center bg-no-repeat dark:bg-main_bg_dark">
+      <div className="min-h-screen w-full bg-mainBgLight bg-cover bg-fixed bg-center bg-no-repeat dark:bg-mainBgDark">
         <PrimaryLayout>{getLayout(<Component {...pageProps} />)}</PrimaryLayout>
       </div>
     </ThemeProvider>
