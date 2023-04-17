@@ -13,37 +13,41 @@ const Resume: React.FC = () => {
           <div className="mt-5 w-full border-t-[2px] border-primary md:w-48" />
         </div>
       </div>
-      <div className="mb-10 grid grid-cols-12  md:gap-5">
+      <div className="mb-10 grid grid-cols-12 space-y-8  md:gap-5 md:space-y-0">
         {/* Education */}
         <div className="col-span-12 gap-4 md:col-span-6 lg:col-span-4">
           <div className="mb-5 flex gap-3">
-            <div className="text-3xl text-primary">
+            <div className="text-2xl text-primary lg:text-3xl">
               <ExperienceIcon />
             </div>
-            <h2 className="font-poppins text-2xl font-medium">Education</h2>
+            <h2 className="font-poppins text-xl font-medium lg:text-2xl">Education</h2>
           </div>
           <div className="space-y-6">
-            <div className="space-y-2 rounded-lg bg-light1rgb p-4 dark:border-2 dark:border-[#212425] dark:bg-transparent">
+            <div className="space-y-1 rounded-lg bg-light1rgb p-4 dark:border-2 dark:border-[#212425] dark:bg-transparent md:space-y-2">
               <p className="font-poppins text-14 text-gray-500 dark:text-[#b7b7b7]">2015-2020</p>
-              <p className="font-poppins text-20 text-black dark:text-white">Systems Engineering</p>
-              <p className="font-poppins text-16 text-black dark:text-[#b7b7b7]">
-                Universidad Nacional de Moquegua
+              <p className="font-poppins text-16 text-black dark:text-white md:text-20">
+                Software Engineering
+              </p>
+              <p className="font-poppins text-14 text-black dark:text-[#b7b7b7] md:text-16">
+                University of Colorado
               </p>
             </div>
-            <div className="space-y-2 rounded-lg bg-light2rgb p-4 dark:border-2 dark:border-[#212425] dark:bg-transparent">
-              <p className="font-poppins text-14 text-gray-500 dark:text-[#b7b7b7]">2022-present</p>
-              <p className="font-poppins text-20 text-black dark:text-white">
-                Bachelor&apos;s degree
+            <div className="space-y-1 rounded-lg bg-light2rgb p-4 dark:border-2 dark:border-[#212425] dark:bg-transparent md:space-y-2">
+              <p className="font-poppins text-14 text-gray-500 dark:text-[#b7b7b7]">2016-present</p>
+              <p className="font-poppins text-16 text-black dark:text-white md:text-20">
+                Bachelor in Software Engineer
               </p>
-              <p className="font-poppins text-16 text-black dark:text-[#b7b7b7]">
-                Universidad Nacional de Moquegua
+              <p className="font-poppins text-14 text-black dark:text-[#b7b7b7] md:text-16">
+                University of Colorado
               </p>
             </div>
-            <div className="space-y-2 rounded-lg bg-light3rgb p-4 dark:border-2 dark:border-[#212425] dark:bg-transparent">
-              <p className="font-poppins text-14 text-gray-500 dark:text-[#b7b7b7]">2021-2022</p>
-              <p className="font-poppins text-20 text-black dark:text-white">Web Developer</p>
-              <p className="font-poppins text-16 text-black dark:text-[#b7b7b7]">
-                Clinica Odontologica Fairdent
+            <div className="space-y-1 rounded-lg bg-light3rgb p-4 dark:border-2 dark:border-[#212425] dark:bg-transparent md:space-y-2">
+              <p className="font-poppins text-14 text-gray-500 dark:text-[#b7b7b7]">2011-2015</p>
+              <p className="font-poppins text-16 text-black dark:text-white md:text-20">
+                Highshool
+              </p>
+              <p className="font-poppins text-14 text-black dark:text-[#b7b7b7] md:text-16">
+                Highshool of Colorado
               </p>
             </div>
           </div>
@@ -51,31 +55,39 @@ const Resume: React.FC = () => {
         {/* Experience */}
         <div className="col-span-12 gap-4 md:col-span-6 lg:col-span-4">
           <div className="mb-5 flex gap-3">
-            <div className="text-3xl text-primary">
+            <div className="text-2xl text-primary lg:text-3xl">
               <EducationIcon />
             </div>
-            <h2 className="font-poppins text-2xl font-medium">Experience</h2>
+            <h2 className="font-poppins text-xl font-medium lg:text-2xl">Experience</h2>
           </div>
           <div className="space-y-6">
-            <div className="space-y-2 rounded-lg bg-light3rgb p-4 dark:border-2 dark:border-[#212425] dark:bg-transparent">
-              <p className="font-poppins text-14 text-gray-500 dark:text-[#b7b7b7]">2021-2022</p>
-              <p className="font-poppins text-20 text-black dark:text-white">Web Developer</p>
-              <p className="font-poppins text-16 text-black dark:text-[#b7b7b7]">
-                Clinica Odontologica Fairdent
+            <div className="space-y-1 rounded-lg bg-light3rgb p-4 dark:border-2 dark:border-[#212425] dark:bg-transparent md:space-y-2">
+              <p className="font-poppins text-14 text-gray-500 dark:text-[#b7b7b7]">2021-present</p>
+              <p className="font-poppins text-16 text-black dark:text-white md:text-20">
+                Frontend Developer
+              </p>
+              <p className="font-poppins text-14 text-black dark:text-[#b7b7b7] md:text-16">
+                The best company
               </p>
             </div>
-            <div className="space-y-2 rounded-lg bg-light4rgb p-4 dark:border-2 dark:border-[#212425] dark:bg-transparent">
-              <p className="font-poppins text-14 text-gray-500 dark:text-[#b7b7b7]">2022-present</p>
-              <p className="font-poppins text-20 text-black dark:text-white">Web Devleoper</p>
-              <p className="font-poppins text-16 text-black dark:text-[#b7b7b7]">
-                Centro Radiologico Stomarx
+
+            <div className="space-y-1 rounded-lg bg-light4rgb p-4 dark:border-2 dark:border-[#212425] dark:bg-transparent md:space-y-2">
+              <p className="font-poppins text-14 text-gray-500 dark:text-[#b7b7b7]">2018-2019</p>
+              <p className="font-poppins text-16 text-black dark:text-white md:text-20">
+                Web Designer
+              </p>
+              <p className="font-poppins text-14 text-black dark:text-[#b7b7b7] md:text-16">
+                The best company
               </p>
             </div>
-            <div className="space-y-2 rounded-lg bg-light1rgb p-4 dark:border-2 dark:border-[#212425] dark:bg-transparent">
-              <p className="font-poppins text-14 text-gray-500 dark:text-[#b7b7b7]">2015-2020</p>
-              <p className="font-poppins text-20 text-black dark:text-white">Systems Engineering</p>
-              <p className="font-poppins text-16 text-black dark:text-[#b7b7b7]">
-                Universidad Nacional de Moquegua
+
+            <div className="space-y-1 rounded-lg bg-light1rgb p-4 dark:border-2 dark:border-[#212425] dark:bg-transparent md:space-y-2">
+              <p className="font-poppins text-14 text-gray-500 dark:text-[#b7b7b7]">2014-2015</p>
+              <p className="font-poppins text-16 text-black dark:text-white md:text-20">
+                Backend Developer
+              </p>
+              <p className="font-poppins text-14 text-black dark:text-[#b7b7b7] md:text-16">
+                The best company
               </p>
             </div>
           </div>
@@ -83,29 +95,31 @@ const Resume: React.FC = () => {
         {/* Languages */}
         <div className="col-span-12 gap-4 md:col-span-6 lg:col-span-4">
           <div className="mb-5 flex gap-3">
-            <div className="text-3xl text-primary">
+            <div className="text-2xl text-primary lg:text-3xl">
               <FiGlobe />
             </div>
-            <h2 className="font-poppins text-2xl font-medium">Languages</h2>
+            <h2 className="font-poppins text-xl font-medium lg:text-2xl">Languages</h2>
           </div>
           <div className="space-y-6">
-            <div className="space-y-2 rounded-lg bg-light1rgb p-4 dark:border-2 dark:border-[#212425] dark:bg-transparent">
+            <div className="space-y-1 rounded-lg bg-light1rgb p-4 dark:border-2 dark:border-[#212425] dark:bg-transparent md:space-y-2">
               <p className="font-poppins text-14 text-gray-500 dark:text-[#b7b7b7]">Native</p>
-              <p className="font-poppins text-20 text-black dark:text-white">Spanish</p>
-              <p className="font-poppins text-16 text-black dark:text-[#b7b7b7]">-</p>
+              <p className="font-poppins text-16 text-black dark:text-white md:text-20">Spanish</p>
+              <p className="font-poppins text-14 text-black dark:text-[#b7b7b7] md:text-16">-</p>
             </div>
-            <div className="space-y-2 rounded-lg bg-light2rgb p-4 dark:border-2 dark:border-[#212425] dark:bg-transparent">
+
+            <div className="space-y-1 rounded-lg bg-light2rgb p-4 dark:border-2 dark:border-[#212425] dark:bg-transparent md:space-y-2">
               <p className="font-poppins text-14 text-gray-500 dark:text-[#b7b7b7]">B2</p>
-              <p className="font-poppins text-20 text-black dark:text-white">English</p>
-              <p className="font-poppins text-16 text-black dark:text-[#b7b7b7]">
+              <p className="font-poppins text-16 text-black dark:text-white md:text-20">English</p>
+              <p className="font-poppins text-14 text-black dark:text-[#b7b7b7] md:text-16">
                 B2 Competency in English
               </p>
             </div>
-            <div className="space-y-2 rounded-lg bg-light1rgb p-4 dark:border-2 dark:border-[#212425] dark:bg-transparent">
-              <p className="font-poppins text-14 text-gray-500 dark:text-[#b7b7b7]">2015-2020</p>
-              <p className="font-poppins text-20 text-black dark:text-white">Systems Engineering</p>
-              <p className="font-poppins text-16 text-black dark:text-[#b7b7b7]">
-                Universidad Nacional de Moquegua
+
+            <div className="space-y-1 rounded-lg bg-light1rgb p-4 dark:border-2 dark:border-[#212425] dark:bg-transparent md:space-y-2">
+              <p className="font-poppins text-14 text-gray-500 dark:text-[#b7b7b7]">B1</p>
+              <p className="font-poppins text-16 text-black dark:text-white md:text-20">French</p>
+              <p className="font-poppins text-14 text-black dark:text-[#b7b7b7] md:text-16">
+                French Institute Loing
               </p>
             </div>
           </div>

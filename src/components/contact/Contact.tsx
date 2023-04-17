@@ -1,14 +1,11 @@
 import Image from 'next/image';
-import { AiOutlineDownload } from 'react-icons/ai';
-import { FaFacebook } from 'react-icons/fa';
-import { RiFacebookFill, RiLinkedinFill, RiTwitterFill, RiYoutubeFill } from 'react-icons/ri';
 
 import { getUndrawImage } from '@/constants';
 
 const Contact: React.FC = () => {
   function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    console.log('ok');
+    console.log('submit form');
   }
 
   return (

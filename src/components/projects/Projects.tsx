@@ -1,7 +1,10 @@
 import Image from 'next/image';
+import { useState } from 'react';
 
 const Projects: React.FC = () => {
-  const filterMenu = ['All', 'Videos', 'Web Design', 'Logo', 'Graphic Design'];
+  type ICategories = 'All' | 'Videos' | 'Graphic Design' | 'Logo' | 'UI/UX';
+
+  const filterMenu = ['All', 'UI/UX', 'Videos', 'Graphic Design', 'Logo'] as ICategories[];
   const projects = [
     {
       category: 'UI/UX',
@@ -9,46 +12,48 @@ const Projects: React.FC = () => {
       image: require('../../assets/images/cartoons/astronaut-dab.jpg')
     },
     {
-      category: 'Web Design',
+      category: 'Logo',
       title: 'Aura Dione',
       image: require('../../assets/images/cartoons/astronaut-rocket.jpg')
     },
     {
-      category: 'Logo',
+      category: 'UI/UX',
       title: 'Chul Urina',
       image: require('../../assets/images/cartoons/bunny.jpg')
     },
     {
-      category: 'Pepe',
-      title: 'Shong Lee',
+      category: 'Videos',
+      title: 'Devy Ryan',
       image: require('../../assets/images/cartoons/chicken.jpg')
     },
     {
-      category: 'Pepe',
+      category: 'Graphic Design',
       title: 'Maria Terry',
       image: require('../../assets/images/cartoons/sheep.jpg')
     },
     {
-      category: 'Pepe',
+      category: 'Graphic Design',
       title: 'Kyle Jefferson',
       image: require('../../assets/images/cartoons/cow.jpg')
     },
     {
-      category: 'Pepe',
+      category: 'Videos',
       title: 'Maria Terry',
       image: require('../../assets/images/cartoons/shark.jpg')
     },
     {
-      category: 'Pepe',
+      category: 'Graphic Design',
       title: 'Maria Terry',
       image: require('../../assets/images/cartoons/panda.jpg')
     },
     {
-      category: 'Pepe',
-      title: 'Maria Terry',
+      category: 'Logo',
+      title: 'Jake Long',
       image: require('../../assets/images/cartoons/spider.jpg')
     }
   ];
+
+  const [categoryState, setCategoryState] = useState<ICategories>('All');
 
   return (
     <>
@@ -60,10 +65,11 @@ const Projects: React.FC = () => {
           <div className="mt-5 w-full border-t-[2px] border-primary md:w-48" />
         </div>
       </div>
-      <ul className="mb-8 flex w-full flex-wrap items-center justify-end gap-3 font-semibold">
+      <ul className="mb-8 flex w-full flex-wrap items-center justify-end gap-5 font-semibold">
         {filterMenu.map((item, idx) => (
           <li
             key={idx}
+            onClick={() => setCategoryState(item)}
             className="cursor-pointer text-[#62676e] hover:text-primary dark:text-[#A6A6A6]"
           >
             {item}
@@ -71,20 +77,22 @@ const Projects: React.FC = () => {
         ))}
       </ul>
       <div className="grid grid-cols-12 gap-6">
-        {projects.map((item, idx) => (
-          <div
-            key={idx}
-            className="col-span-12 space-y-2 rounded-xl border-[#212425] bg-[#f1f8ff] p-6 dark:border-[2px] dark:bg-transparent sm:col-span-6 lg:col-span-4"
-          >
-            <Image
-              src={item.image}
-              alt="project-image"
-              className="h-auto w-full transform cursor-pointer rounded-lg transition duration-200 ease-in-out hover:scale-110"
-            />
-            <p className="text-14 dark:text-[#A6A6A6]">{item.category}</p>
-            <h2 className="text-20 font-semibold">{item.title}</h2>
-          </div>
-        ))}
+        {projects
+          .filter((cat) => cat.category === categoryState || categoryState === 'All')
+          .map((item, idx) => (
+            <div
+              key={idx}
+              className="col-span-12 space-y-2 rounded-xl border-[#212425] bg-[#f1f8ff] p-6 dark:border-[2px] dark:bg-transparent sm:col-span-6 lg:col-span-4"
+            >
+              <Image
+                src={item.image}
+                alt="project-image"
+                className="h-auto w-full transform cursor-pointer rounded-lg transition duration-200 ease-in-out hover:scale-110"
+              />
+              <p className="text-14 dark:text-[#A6A6A6]">{item.category}</p>
+              <h2 className="text-20 font-semibold">{item.title}</h2>
+            </div>
+          ))}
       </div>
     </>
   );

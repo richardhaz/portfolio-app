@@ -17,7 +17,7 @@ const Navbar: React.FC = () => {
 
   return (
     <>
-      <div className="use-container sticky top-0 z-50 flex h-20 items-center justify-between bg-[#F2F5F6] dark:bg-black md:h-24 lg:bg-transparent dark:lg:bg-transparent">
+      <div className="use-container sticky top-0 z-50 flex h-20 items-center justify-between bg-[#F2F5F6] dark:bg-black md:h-24 dark:lg:bg-[#111111]">
         <div className="w-full">
           <span className="rounded-full font-montserrat text-2xl font-semibold text-primary dark:text-white lg:text-3xl">
             {/*      &#60; Richard &#47; &#62; */}
