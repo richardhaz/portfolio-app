@@ -16,7 +16,7 @@ const Navbar: React.FC = () => {
   useClickOutside({ ref, fn: toggleMenu });
 
   return (
-    <div className="sticky top-0 z-50 bg-[#F2F5F6] dark:bg-black lg:bg-transparent dark:lg:bg-transparent">
+    <div className="sticky top-0 z-50 bg-[#F2F5F6] dark:bg-black lg:top-auto lg:bg-transparent dark:lg:bg-transparent">
       <div className=" use-container flex h-20 items-center justify-between md:h-24">
         <div className="w-full">
           <span className="rounded-full font-montserrat text-2xl font-semibold text-primary dark:text-white lg:text-3xl">
