@@ -187,16 +187,16 @@ const Resume: React.FC = () => {
               Flexibility
             </button>
             <button className="rounded-xl bg-gray-100 py-2 px-4 font-poppins text-15 text-[#44566C] dark:bg-[#1C1C1C] dark:text-[#A6A6A6]">
-              Quackity
+              Windows
             </button>
             <button className="rounded-xl bg-gray-100 py-2 px-4 font-poppins text-15 text-[#44566C] dark:bg-[#1C1C1C] dark:text-[#A6A6A6]">
-              Something
+              Marketing
             </button>
             <button className="rounded-xl bg-gray-100 py-2 px-4 font-poppins text-15 text-[#44566C] dark:bg-[#1C1C1C] dark:text-[#A6A6A6]">
-              I believe
+              Design
             </button>
             <button className="rounded-xl bg-gray-100 py-2 px-4 font-poppins text-15 text-[#44566C] dark:bg-[#1C1C1C] dark:text-[#A6A6A6]">
-              Trusting God
+              UI/UX
             </button>
           </div>
         </div>
