@@ -9,7 +9,7 @@ import {
 } from 'react-icons/md';
 import { RiCalendarCheckFill, RiMailSendFill } from 'react-icons/ri';
 
-import feelingProud from '@/assets/undraw/feeling-proud.svg';
+import feelingProud from '@/assets/undraw/me_girl.svg';
 
 const About: React.FC = () => {
   return (
@@ -24,13 +24,9 @@ const About: React.FC = () => {
           </div>
         </div>
         <div className="col-span-12 my-4 flex items-center justify-center lg:col-span-4 lg:my-0">
-          <Image
-            src={feelingProud}
-            width="250px"
-            height="250px"
-            objectFit="cover"
-            alt="about-image"
-          />
+          <div className="relative flex h-72 w-72 items-center justify-center">
+            <Image src={feelingProud} objectFit="cover" alt="about-image" />
+          </div>
         </div>
         <div className="col-span-12 space-y-5 lg:col-span-8">
           <div className="w-full md:max-w-[95%]">

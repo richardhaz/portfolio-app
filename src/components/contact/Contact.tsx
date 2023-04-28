@@ -21,7 +21,7 @@ const Contact: React.FC = () => {
       <div className="grid grid-cols-12 gap-4 xl:gap-10">
         <div className="col-span-12 flex items-center justify-center p-4 md:p-0 lg:col-span-4">
           <div className="max-w-[250px] xs:max-w-sm md:max-w-md">
-            <Image src={getUndrawImage().programmingGuy} alt="programming-guy" />
+            <Image src={getUndrawImage().programmingGirl} alt="programming-guy" />
           </div>
         </div>
         <div className="col-span-12 bg-gray-50 p-4 dark:bg-transparent md:p-8 lg:col-span-8 xl:p-14">

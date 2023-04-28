@@ -21,7 +21,7 @@ const Navbar: React.FC = () => {
         <div className="w-full">
           <span className="rounded-full font-montserrat text-2xl font-semibold text-primary dark:text-white lg:text-3xl">
             {/*      &#60; Richard &#47; &#62; */}
-            Rachael
+            Wendy
           </span>
         </div>
         <ul className="hidden gap-4 lg:flex">

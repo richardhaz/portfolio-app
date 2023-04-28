@@ -2,7 +2,7 @@ import Image from 'next/image';
 import { AiOutlineDownload } from 'react-icons/ai';
 import { RiFacebookFill, RiLinkedinFill, RiTwitterFill, RiYoutubeFill } from 'react-icons/ri';
 
-import Avatar from '@/assets/avatar/default-avatar.png';
+import Avatar from '@/assets/avatar/avatar.png';
 
 const Profile: React.FC = () => {
   return (
@@ -11,9 +11,9 @@ const Profile: React.FC = () => {
         <Image src={Avatar} objectFit="cover" width={230} height={230} alt="avatar" />
       </div>
       <h1 className="mt-5 flex items-center justify-center text-center font-poppins text-2xl font-semibold">
-        Rachael Smith
+        Wendy Madison
       </h1>
-      <p className="mt-1 text-center font-poppins text-16 text-[#7b7b7b]">Web Developer</p>
+      <p className="mt-1 text-center font-poppins text-16 text-[#7b7b7b]">Web Designer</p>
       <div className="mt-3 flex items-center justify-center space-x-3">
         <a
           href="#"
