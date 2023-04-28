@@ -56,5 +56,5 @@ export const getSvgCompany = () => ({
 });
 
 export const getUndrawImage = () => ({
-  programmingGuy: require('../assets/undraw/programming-guy.svg')
+  programmingGuy: require('../assets/undraw/productivity.svg')
 });

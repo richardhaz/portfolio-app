@@ -1,23 +1,14 @@
 import Image from 'next/image';
-import { useTheme } from 'next-themes';
 import { AiOutlineDownload } from 'react-icons/ai';
 import { RiFacebookFill, RiLinkedinFill, RiTwitterFill, RiYoutubeFill } from 'react-icons/ri';
 
-import Avatar from '@/assets/avatar/avatar.svg';
-import AvatarDark from '@/assets/avatar/avatar-dark.svg';
+import Avatar from '@/assets/avatar/default-avatar.png';
 
 const Profile: React.FC = () => {
-  const { theme } = useTheme();
   return (
     <div className="flex h-[80vh] flex-col items-center justify-center">
       <div className="flex select-none overflow-hidden rounded-full bg-primary-light dark:bg-[#212425] dark:from-[#212425] dark:to-[#3d3d3d]">
-        <Image
-          src={theme === 'light' ? Avatar : AvatarDark}
-          objectFit="cover"
-          width={230}
-          height={230}
-          alt="avatar"
-        />
+        <Image src={Avatar} objectFit="cover" width={230} height={230} alt="avatar" />
       </div>
       <h1 className="mt-5 flex items-center justify-center text-center font-poppins text-2xl font-semibold">
         Rachael Smith
