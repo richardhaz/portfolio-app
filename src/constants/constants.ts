@@ -36,5 +36,5 @@ export const navLinks = [
 
 export const getUndrawImage = () => ({
   programmingGuy: require('../assets/undraw/productivity.svg'),
-  programmingGirl: require('../assets/undraw/fall_girl.svg')
+  programmingGirl: require('../assets/undraw/contact.svg')
 });

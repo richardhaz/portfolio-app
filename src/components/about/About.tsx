@@ -9,7 +9,7 @@ import {
 } from 'react-icons/md';
 import { RiCalendarCheckFill, RiMailSendFill } from 'react-icons/ri';
 
-import feelingProud from '@/assets/undraw/me_girl.svg';
+import feelingProud from '@/assets/undraw/about.svg';
 
 const About: React.FC = () => {
   return (
@@ -31,7 +31,7 @@ const About: React.FC = () => {
         <div className="col-span-12 space-y-5 lg:col-span-8">
           <div className="w-full md:max-w-[95%]">
             <h3 className="mb-3 font-poppins text-xl font-medium">Who am I?</h3>
-            <p className="font-poppins text-16 text-gray-500">
+            <p className="font-poppins text-16 text-gray-500 dark:text-[#A6A6A6]">
               I&apos;m a web developer with 5 years of experience in creating responsive and dynamic
               websites. I specialize in using modern web technologies like React, Node.js, and
               GraphQL to build high-performing and scalable web applications.

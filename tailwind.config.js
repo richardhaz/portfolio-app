@@ -1,4 +1,6 @@
+require('dotenv').config();
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
   content: [
     './src/components/**/*.{js,ts,jsx,tsx}',
@@ -18,8 +20,14 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        mainBgLight: "url('/images/main-bg-white-squares.jpg')",
-        mainBgDark: "url('/images/main-bg-dark.jpg')"
+        mainBgLight:
+          process.env.PRODUCTION_MODE === 'true'
+            ? "url('/projects/portfolio-app/images/main-bg-white-squares.jpg')"
+            : "url('/images/main-bg-white-squares.jpg')",
+        mainBgDark:
+          process.env.PRODUCTION_MODE === 'true'
+            ? "url('/projects/portfolio-app/images/main-bg-dark.jpg')"
+            : "url('/images/main-bg-dark.jpg')"
       },
       colors: {
         primary: {

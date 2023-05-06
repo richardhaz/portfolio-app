@@ -19,10 +19,11 @@ const Navbar: React.FC = () => {
     <div className="sticky top-0 z-50 bg-[#F2F5F6] dark:bg-black lg:top-auto lg:bg-transparent dark:lg:bg-transparent">
       <div className=" use-container flex h-20 items-center justify-between md:h-24">
         <div className="w-full">
-          <span className="rounded-full font-montserrat text-2xl font-semibold text-primary dark:text-white lg:text-3xl">
-            {/*      &#60; Richard &#47; &#62; */}
-            Wendy
-          </span>
+          <Link href="/">
+            <button className="rounded-full font-montserrat text-2xl font-semibold text-primary dark:text-white lg:text-3xl">
+              Wendy
+            </button>
+          </Link>
         </div>
         <ul className="hidden gap-4 lg:flex">
           {navLinks.map((item) => (
@@ -67,7 +68,7 @@ const Navbar: React.FC = () => {
           {navLinks.map((item) => (
             <Link key={item.link} href={item.link}>
               <a
-                className={`block rounded-md py-2 px-3 hover:bg-primary hover:text-white dark:hover:text-white ${
+                className={`block rounded-md py-3 px-3 hover:bg-primary hover:text-white dark:hover:text-white ${
                   router.pathname === item.link
                     ? 'bg-primary text-white'
                     : 'text-[#44566C] dark:text-[#A6A6A6]'
